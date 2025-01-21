@@ -1,0 +1,87 @@
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 6px rgb(237, 237, 237);
+  z-index: 1000;
+}
+.header .logo_div .logo {
+  width: 25px;
+}
+@media screen and (max-width: 768px) {
+  .header .navbar {
+    position: absolute;
+    background: var(--secondaryColor);
+    width: 80%;
+    top: -100rem;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    transition: 0.3s ease;
+    z-index: 2000;
+  }
+  .header .navbar .icon_close {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: var(--secondaryColor);
+    color: var(--primaryColor);
+    padding: 3px;
+    border-radius: 50%;
+    font-size: 40px;
+  }
+  .header .navbar .icon_close :hover {
+    color: #f00;
+  }
+  .header .menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header .menu .list_item {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .header .menu .list_item a {
+    font-size: 15px;
+  }
+  .header .menu .list_item:hover {
+    background: var(--primaryColor);
+    color: var(--white-color);
+    transition: 0.6s ease;
+  }
+  .header .menu .list_item:hover a {
+    color: #fff;
+    transition: 0.6s ease;
+  }
+}
+.header .sign_up {
+  gap: 0.5rem;
+}
+.header .sign_up .text {
+  padding: 3px 10px;
+  background: var(--primaryColor);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.header .sign_up .text:hover {
+  background: var(--secondaryColor);
+  color: var(--black-color);
+}
+.header .sign_up .toggleNavbarIcon {
+  background: none;
+  color: var(--primaryColor);
+  font-weight: 600;
+  font-size: 23px;
+}/*# sourceMappingURL=navbar.module.css.map */
