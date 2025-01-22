@@ -1,0 +1,54 @@
+.home {
+    padding-top: 8rem;
+    .sec_container {
+        padding: 0 1.5rem;
+        text-align: center;
+        display: grid;
+        gap: 2rem;
+        .home_text {
+            .home_span {
+                font-size: 15px;
+                font-weight: 400;
+                color: #a3a3a3;
+            }
+            .home_title {
+                font-size: 30px;
+                font-weight: 700;
+                color: #001;
+            }
+            .btns {
+                gap: 1.5rem;
+                justify-content: center;
+                .btn {
+                    padding: 10px 15px;
+                    border-radius: 3px;
+                    font-weight: 600;
+                    margin-top: 0.5rem;
+                    font-size: 12px;
+                    &:hover {
+                        background: var(--primaryColor);
+                        color: #f5f4fa;
+                    }
+                }
+                .btn:nth-child(1) {
+                    background: #f5f4fa;
+                    color: #a3a3a3;
+                    &:hover {
+                        background: var(--primaryColor);
+                        color: #f5f4fa;
+                    }
+                }
+                .btn:nth-child(2) {
+                    color: #f5f4fa;
+                    &:hover {
+                        background: #f5f4fa;
+                        color: #a3a3a3;
+                    }
+                }
+            }
+        }
+        .home_img {
+            margin: auto;
+        }
+    }
+}

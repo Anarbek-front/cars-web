@@ -6,7 +6,7 @@ import { Review } from "./components/Review/Review";
 import { Search } from "./components/Search/Search";
 import { Seller } from "./components/Sellers/Seller";
 import { Trending } from "./components/Trending/Trending";
-import  "./App.css";
+import  "./App.scss";
 
 export const App = () => {
     return (
